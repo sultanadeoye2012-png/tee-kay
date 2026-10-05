@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="tklg.png">
+    <style>
+        body {
+            font-family: "unbounded";
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff78c;
+            padding: 1rem 2rem;
+        }
+        .hero {
+            background-image:url(tkbg.svg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       .navbar-logo img {
+        height: 30px;
+       }
+       .nav-list {
+        display: flex;
+        align-items: center;
+       }
+       .nav-ul-list {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 1rem;
+        color: #000000;
+       }
+       nav ul li a {
+        text-decoration: none;
+        color: #00000079;
+        font-weight: 400;
+       }
+       nav ul li a:hover {
+        color: black;
+       }
+       .hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 2rem;
+        gap: 2rem;
+        box-sizing: border-box;
+       }
+       .hero-text {
+        text-align: left;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       }
+       .hero-h1 {
+        font-size: 75px;
+        margin-top: 0;
+        margin-bottom: 16px;
+        color: #000000;
+        line-height: 1.1;
+       }
+       .hero-p {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 32px;
+        color: black;
+       }
+       .hero-btn {
+        padding: 0.75rem 1.5rem;
+        background-color: #eeff00;
+        color: black;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+       }
+       .hero-btn:hover {
+        background-color: #0f0f00;
+        color: white;
+       }
+       .hero-image-container {
+        width: 400px;
+        height: 400px;
+        background-color: rgba(255, 255 , 255 ,0.2);
+        border-radius: 8px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-right: 32px;
+       }
+       .hero-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       }
+       .catalog {
+        padding: 80px 32px;
+        background-color: white;
+        text-align: center;
+       }
+       .catalog-title {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 48px;
+        color: black;
+       }
+       .catalog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 32px;
+        max-width: 1200px;
+        margin: 0 auto;
+       }
+       .catalog-item {
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        padding: 24px;
+        text-align: left;
+        transition: transfrom 0.3s ease;
+       }
+       .catalog-item:hover {
+        transform: translateY(-5px);
+       }
+       .catalog-item img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 4px;
+        background-color: #eaeaea;
+        margin-bottom: 16px;
+       }
+       .catalog-item h3 {
+        margin: 0 0 8px 0;
+        font-size: 24px;
+        color: #000000;
+       }
+    .catalog-item p {
+        margin: 0 0 16px 0;
+        font-family: 'Manrope', sans-serif;
+        color: #555555;
+        line-height: 1.5;
+    }
+    .catalog-item-price {
+        font-weight: bold;
+        font-size: 19.2px;
+        color: #000000;
+    }
+    .video-section {
+        padding: 80px 32px;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+    .video-title {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 32px;
+        color: #000000;
+    }
+    .video-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: #000000;
+        border-radius: 8px;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+        width: 100%;
+    }
+    .video-container iframe,
+    .video-container video{
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+    }
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+            <a class="navbar-logo" href="#">
+                <img src="tklogo.png">
+            </a>
+            <div class="nav-list    ">
+                <ul class="nav-ul-list">
+                    <li><a href="#" class="a1">Home</a></li>
+                    <li><a href="#" class="a2">About Us</a></li>
+                    <li><a href="#" class="a3">Contact</a></li>
+                    <li><a href="#" class="a4">FAQ</a></li>
+                    <li><a href="#" class="a5">Connect</a></li>
+                </ul>
+            </div> 
+        </nav>
+    <section class="hero">
+        <div class="hero-content">
+                <div class="hero-text"><h1 class="hero-h1">Welcome to Tee & Kay Enterprices</h1>
+                <p class="hero-p">Home of quality wholesales</p>
+                <a href="#" class="hero-btn">Check Store</a></div>
+                <div class="hero-image-container">
+                <img src="hero-image.jpeg" class="hero-image">
+            </div> 
+        </div>  
+    </section>
+    <section class="catalog">
+        <h2 class="catalog-title">Our Catalog</h2>
+        <div class="catalog-grid">
+            <div class="catalog-item">
+                <img src="product1.jpg">
+                <h3>1kg of semovita</h3>
+                <p>Semovita is a high quality carbohydrate product perfect for dinner</p>
+                <div class="catalog-item price">N 2000</div>
+            </div>
+            <div class="catalog-item">
+                <img src="product2.jpg">
+                <h3>pure bliss</h3>
+                <p>pure bliss is a high quality snack perfect for hydrating the body </p>
+                <div class="catalog-item price">N 2200</div>
+            </div>
+            <div class="catalog-item">
+                <img src="product3.jpg">
+                <h3>spaghetti</h3>
+                <p>Semovita is a high quality carbohydrate product pefect for breakfast</p>
+                <div class="catalog-item price">N 1000</div>
+            </div>
+        </div>
+    </section> 
+    <section class="video-section">
+        <h2 class="video-title">A Brief Intro</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="videokk.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>    
+</body>
+</html>
